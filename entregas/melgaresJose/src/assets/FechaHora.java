@@ -1,6 +1,6 @@
 package assets;
 
-class FechaHora {
+public class FechaHora {
     int dia;
     int mes;
     int año;
@@ -20,7 +20,8 @@ class FechaHora {
     }
 
     public FechaHora(FechaHora fechaHora) {
-        this(fechaHora.dia,
+        this(
+            fechaHora.dia,
             fechaHora.mes,
             fechaHora.año,
             fechaHora.hora,

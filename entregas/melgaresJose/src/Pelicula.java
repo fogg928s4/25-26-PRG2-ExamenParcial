@@ -1,12 +1,10 @@
- import assets.Console;
+import assets.*;
 
 class Pelicula {   
     String titulo;
     String director;
     int duracion;
     int clasificacion;
-
-    Console consola = new Console();
 
     public Pelicula(String titulo, String director, int duracion, int clasificacion) {
         this.titulo = titulo;
@@ -22,6 +20,7 @@ class Pelicula {
     }
 
     public void mostrarInformacion() {
+        Console consola = new Console();
         consola.write(formatearAString());
     }
     public boolean esMasLarga(Pelicula pelicula) {
@@ -37,9 +36,9 @@ class Pelicula {
         String seccionDuracion = "Duracion: " + duracion + "min";
         String seccionClasificacion = "Clasificación: " + clasificacion;
 
-        return seccionTitulo + " // \n" 
-                + seccionDirector + " // \n"
-                + seccionDuracion + " // \n" 
+        return seccionTitulo + "\n" 
+                + seccionDirector + "\n"
+                + seccionDuracion + "\n" 
                 + seccionClasificacion;
     }
 }

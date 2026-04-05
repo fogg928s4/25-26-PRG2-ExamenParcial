@@ -23,6 +23,9 @@ class Sala {
     public boolean estaLlena(int asientosVendidos) {
         return asientosVendidos < capacidad;
     }
+    public int obtenerAsientosDisponibles(int asientosVendidos) {
+        return capacidad - asientosVendidos;
+    }
 
     private String formatearInfo() {
         return "Sala N° " + numero + "\n"
